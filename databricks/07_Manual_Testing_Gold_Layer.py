@@ -29,17 +29,3 @@ fact_path = gold_base + "fact_sales"
 
 display(spark.read.format("delta").load(dim_path))
 display(spark.read.format("delta").load(fact_path))
-
-# COMMAND ----------
-
-dbutils.secrets.listScopes()
-
-# COMMAND ----------
-
-dbutils.secrets.list("sales-secret-scope")
-
-# COMMAND ----------
-
-dbutils.secrets.get(scope="sales-secret-scope", key="clientid")
-dbutils.secrets.get(scope="sales-secret-scope", key="clientsecretes")
-dbutils.secrets.get(scope="sales-secret-scope", key="tenantid")
