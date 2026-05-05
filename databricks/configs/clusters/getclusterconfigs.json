@@ -1,0 +1,82 @@
+{
+    "cluster_id": "0505-074802-czas06fv",
+    "creator_user_name": "prathameshbpatil8512@gmail.com",
+    "driver": {
+        "private_ip": "10.139.64.4",
+        "public_dns": "",
+        "node_id": "d5dfd2d189274c278c0003260d28d7a7",
+        "instance_id": "2b7d1f74afcb4f9db02e379c78e88833",
+        "start_timestamp": 1777991869176,
+        "node_type_id": "Standard_D4ds_v5",
+        "node_attributes": {
+            "is_spot": false
+        },
+        "host_private_ip": "10.139.0.4",
+        "ngrok_endpoint_base_domain": "green.mux.ngrok-dataplane.wildcard"
+    },
+    "spark_context_id": 5538605013962776000,
+    "driver_healthy": true,
+    "jdbc_port": 10000,
+    "cluster_name": "Cluster Sales",
+    "spark_version": "13.3.x-scala2.12",
+    "spark_conf": {
+        "spark.master": "local[*, 4]",
+        "spark.databricks.cluster.profile": "singleNode"
+    },
+    "azure_attributes": {
+        "first_on_demand": 1,
+        "availability": "ON_DEMAND_AZURE",
+        "spot_bid_max_price": -1
+    },
+    "node_type_id": "Standard_D4ds_v5",
+    "driver_node_type_id": "Standard_D4ds_v5",
+    "custom_tags": {
+        "ResourceClass": "SingleNode"
+    },
+    "autotermination_minutes": 10,
+    "enable_elastic_disk": true,
+    "disk_spec": {},
+    "cluster_source": "UI",
+    "single_user_name": "prathameshbpatil8512@gmail.com",
+    "enable_local_disk_encryption": false,
+    "instance_source": {
+        "node_type_id": "Standard_D4ds_v5"
+    },
+    "driver_instance_source": {
+        "node_type_id": "Standard_D4ds_v5"
+    },
+    "data_security_mode": "SINGLE_USER",
+    "runtime_engine": "PHOTON",
+    "effective_spark_version": "13.3.x-photon-scala2.12",
+    "kind": "CLASSIC_PREVIEW",
+    "is_single_node": true,
+    "assigned_principal": "user:prathameshbpatil8512@gmail.com",
+    "release_version": "13.3.59",
+    "state": "RUNNING",
+    "state_message": "",
+    "start_time": 1777967282571,
+    "last_state_loss_time": 1777991928325,
+    "last_activity_time": 1777991894320,
+    "last_restarted_time": 1777991928385,
+    "num_workers": 0,
+    "cluster_memory_mb": 16384,
+    "cluster_cores": 4,
+    "default_tags": {
+        "Vendor": "Databricks",
+        "Creator": "prathameshbpatil8512@gmail.com",
+        "ClusterName": "Cluster Sales",
+        "ClusterId": "0505-074802-czas06fv"
+    },
+    "init_scripts_safe_mode": false,
+    "spec": {
+        "cluster_name": "Cluster Sales",
+        "spark_version": "13.3.x-scala2.12",
+        "node_type_id": "Standard_D4ds_v5",
+        "autotermination_minutes": 10,
+        "single_user_name": "prathameshbpatil8512@gmail.com",
+        "data_security_mode": "DATA_SECURITY_MODE_AUTO",
+        "runtime_engine": "PHOTON",
+        "kind": "CLASSIC_PREVIEW",
+        "is_single_node": true
+    }
+}
