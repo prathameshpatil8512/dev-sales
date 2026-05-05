@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevsales001"
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"LS_ADLS001_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS002_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0505-074802-czas06fv"
+		},
+		"LS_ADLS001_properties_typeProperties_url": {
+			"value": "https://adlsdevsales001.dfs.core.windows.net/"
+		},
+		"LS_ADLS002_properties_typeProperties_url": {
+			"value": "https://adlsdevsales002.dfs.core.windows.net/"
+		}
+	}
+}
