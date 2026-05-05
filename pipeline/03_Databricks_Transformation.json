@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/devsales/02_Config_Connection"
+					"notebookPath": "/Repos/prathameshbpatil8512@gmail.com/dev-sales/databricks/02_Config_Connection"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -42,7 +42,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/devsales/03_Bronze_Ingestion"
+					"notebookPath": "/Repos/prathameshbpatil8512@gmail.com/dev-sales/databricks/03_Bronze_Ingestion"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -69,7 +69,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/devsales/04_Silver_Transformation"
+					"notebookPath": "/Repos/prathameshbpatil8512@gmail.com/dev-sales/databricks/04_Silver_Transformation"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -96,7 +96,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/devsales/05_Gold_Transformation"
+					"notebookPath": "/Repos/prathameshbpatil8512@gmail.com/dev-sales/databricks/05_Gold_Transformation"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -123,7 +123,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/devsales/06_PowerBI_Consumption"
+					"notebookPath": "/Repos/prathameshbpatil8512@gmail.com/dev-sales/databricks/06_PowerBI_Consumption"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
