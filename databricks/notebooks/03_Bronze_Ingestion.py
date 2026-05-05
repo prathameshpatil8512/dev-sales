@@ -70,3 +70,4 @@ except:
 df_new.write.format("delta") \
     .mode("append") \
     .save(bronze_path)
+

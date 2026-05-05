@@ -120,3 +120,4 @@ if DeltaTable.isDeltaTable(spark, fact_path):
 
 else:
     fact_df.write.format("delta").save(fact_path)
+

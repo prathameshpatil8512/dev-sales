@@ -1,4 +1,9 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC ### Establish & Test Connection
+
+# COMMAND ----------
+
 # ===============================
 # CONFIGURATION
 # ===============================
@@ -20,12 +25,10 @@ spark.conf.set(f"fs.azure.account.oauth2.client.secret.{storage_account}.dfs.cor
 
 spark.conf.set(f"fs.azure.account.oauth2.client.endpoint.{storage_account}.dfs.core.windows.net",
                f"https://login.microsoftonline.com/{tenant_id}/oauth2/token")
-               
+
+# ===============================
+# TEST CONNECTION
 # ===============================
 
-gold_base = "abfss://gold@adlsdevsales002.dfs.core.windows.net/"
-dim_path = gold_base + "dim_customer"
-fact_path = gold_base + "fact_sales"
+dbutils.fs.ls("abfss://bronze@adlsdevsales002.dfs.core.windows.net/")
 
-display(spark.read.format("delta").load(dim_path))
-display(spark.read.format("delta").load(fact_path))

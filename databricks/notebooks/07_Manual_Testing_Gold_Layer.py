@@ -1,9 +1,4 @@
 # Databricks notebook source
-# MAGIC %md
-# MAGIC ### Power BI Consumption
-
-# COMMAND ----------
-
 # ===============================
 # CONFIGURATION
 # ===============================
@@ -28,21 +23,10 @@ spark.conf.set(f"fs.azure.account.oauth2.client.endpoint.{storage_account}.dfs.c
                
 # ===============================
 
-# ===============================
-# CREATE VIEW FOR POWER BI
-# ===============================
+gold_base = "abfss://gold@adlsdevsales002.dfs.core.windows.net/"
+dim_path = gold_base + "dim_customer"
+fact_path = gold_base + "fact_sales"
 
-gold_path = "abfss://gold@adlsdevsales002.dfs.core.windows.net/fact_sales"
+display(spark.read.format("delta").load(dim_path))
+display(spark.read.format("delta").load(fact_path))
 
-spark.sql(f"""
-CREATE OR REPLACE VIEW gold_sales_view AS
-SELECT 
-    OrderID,
-    CustomerID,
-    Quantity,
-    TotalAmount
-FROM delta.`{gold_path}`
-""")
-
-# Test
-spark.sql("SELECT * FROM gold_sales_view").show()

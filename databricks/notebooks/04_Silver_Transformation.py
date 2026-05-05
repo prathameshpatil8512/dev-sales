@@ -121,3 +121,4 @@ if new_wm:
         .write.format("delta") \
         .mode("overwrite") \
         .save(watermark_path)
+
