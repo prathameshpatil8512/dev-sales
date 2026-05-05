@@ -1,0 +1,15 @@
+{
+	"name": "adfdevsales001",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ab810d8f-57d7-40ec-92d1-c5668b59794b",
+		"tenantId": "957e396b-9bd0-4f11-88bb-e24082d4134a"
+	}
+}
