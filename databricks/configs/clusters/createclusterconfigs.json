@@ -1,0 +1,11 @@
+{
+    "cluster_name": "Cluster Sales",
+    "spark_version": "13.3.x-scala2.12",
+    "node_type_id": "Standard_D4ds_v5",
+    "autotermination_minutes": 10,
+    "single_user_name": "prathameshbpatil8512@gmail.com",
+    "data_security_mode": "DATA_SECURITY_MODE_AUTO",
+    "runtime_engine": "PHOTON",
+    "kind": "CLASSIC_PREVIEW",
+    "is_single_node": true
+}
